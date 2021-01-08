@@ -1,0 +1,29 @@
+.dropdown {
+
+    &__menu {
+        padding: 0;
+    }
+
+    &__item {
+        padding: $spacing-s $spacing-m;
+
+        &--active {
+            color: $primary-red;
+        }
+
+        &:focus {
+            background-color: $primary-red;
+            color: $secondary-light;
+        }
+
+        &--dark {
+            background-color: $primary-red;
+            color: $secondary-light;
+
+            &:hover {
+                background-color: $secondary-red;
+                color: $secondary-light;
+            }
+        }
+    }
+}

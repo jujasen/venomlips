@@ -1,0 +1,34 @@
+
+
+.h1 {
+    text-transform: uppercase;
+    color: $primary-red;
+    font-size: $fontsize-primary-xl;
+
+    &--margin {
+        margin-bottom: $spacing-xl;
+    }
+}
+
+.h2 {
+    text-transform: uppercase;
+    color: $primary-red;
+    font-size: $fontsize-primary;
+    font-weight: $font-medium;
+    text-align: center;
+}
+
+
+.h3 {
+    text-transform: uppercase;
+    color: $primary-red;
+    font-size: $fontsize-primary-s;
+    text-align: left;
+    margin-bottom: $spacing-m;
+}
+
+//to ovverride bootstrap
+.h1, .h2, .h4, .h5, .h6, h1, h2, h4, h5, h6 {
+    text-align: center;
+    font-weight: $font-medium;
+}

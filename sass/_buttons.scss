@@ -1,0 +1,85 @@
+.button {
+    background-color: $primary-light;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-s $spacing-m;
+
+    &:hover {
+        background-color: #ffd6e7;
+    }
+
+    &--red {
+        background-color: $secondary-red;
+
+        &:hover {
+            background-color: #d13248;
+        }
+    }
+
+    &--thick {
+        padding: $spacing-m $spacing-m;
+    }
+
+    &--dark {
+        background-color: $primary-red;
+
+        &:hover {
+            background-color: #a86064;
+
+        }
+    }
+
+    &--center{
+        display: flex;
+        width: 200px;
+        margin: 50px auto 100px auto;
+        
+    }
+
+    &--margin {
+        margin-bottom: $spacing-xl;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: $fontsize-primary-s;
+
+        &--thick {
+            font-weight: $font-medium;
+        }
+
+        &--light {
+            color: $secondary-light;
+        }
+    }
+
+
+    &__icon {
+        font-size: $fontsize-primary-s;
+        line-height: 1.5;
+
+        &--light {
+            color: $secondary-light;
+        }
+
+        &--remove {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .button {
+
+        &--center {
+            display: flex;
+            width: 200px;
+            margin: 50px auto 50px auto;
+    
+        }
+        &__icon {
+            line-height: 2rem;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.product-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__h2 {
+        text-align: left;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+
+        &__icon {
+            line-height: 1.9;
+            padding: 0 $spacing-s;
+            font-size: $fontsize-primary-s;
+        }
+    }
+}

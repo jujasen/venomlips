@@ -1,0 +1,16 @@
+.testuser {
+    &__title {
+        color: $primary-red;
+        font-weight: $font-medium;
+        margin: $spacing-m 0;
+    }
+
+    &__text {
+        margin: $spacing-s 0 0 0;
+    }
+
+    &__icon {
+        color: $primary-red;
+        padding: $spacing-s;
+    }
+}

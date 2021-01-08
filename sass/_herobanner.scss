@@ -1,0 +1,100 @@
+.herobanner {
+    margin-top: $navbar-spacing;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 310px;
+
+
+    &--second {
+        background-image: url("../img/heroimg/productimg.jpg");
+    }
+
+    &__h1 {
+
+        font-family: $secondary-font;
+        font-weight: $font-black;
+        font-size: $fontsize-hero;
+        color: $secondary-red;
+
+        &--adjusted-l {
+            padding-top: 170px;
+            text-align: center;
+            margin-right: 100px;
+        }
+
+        &--adjusted-r {
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        &--centered-top {
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        &--centered-bottom {
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .herobanner {
+        height: 400px;
+        margin-top: $navbar-spacing - 5px;
+
+        &__heading {
+            display: flex;
+            justify-content: center;
+
+            &--block {
+                display: block;
+            }
+        }
+
+        &__h1 {
+
+            font-size: $fontsize-hero-desktop;
+
+    
+            &--adjusted-l {
+                padding-top: 250px;
+                margin: 0;
+                margin-right: $spacing-l;
+            }
+    
+            &--adjusted-r {
+                padding-top: 280px;
+
+                margin: 0;
+            }
+
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 323px) {
+    .herobanner {
+
+        &__h1 {
+            font-size: 40px;
+
+            &--adjusted-l {
+                margin-right: 50px;
+            }
+    
+            &--adjusted-r {
+                margin-left: 50px;
+            }
+
+            &--centered-top {
+                padding-top: 150px;
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.productdisplay {
+
+    &__img {
+        width: 100%;
+        margin: $spacing-l 0;
+    }
+
+    
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .productdisplay {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &__img {
+            width: 50%;
+            margin-right: 50px;
+        }
+    }
+}

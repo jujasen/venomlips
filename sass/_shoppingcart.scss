@@ -1,0 +1,20 @@
+@media only screen and (min-width: 768px) {
+    .shoppingcart {
+        display: flex;
+        
+        align-items: center;
+
+
+        &__details {
+            width: 100%;
+
+            &--margin {
+                margin-left: 100px;
+            }
+        }
+
+        &__noitems {
+            text-align: center;
+        }
+    }
+}

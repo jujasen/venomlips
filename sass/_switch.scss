@@ -1,0 +1,67 @@
+.switch {
+
+    position: absolute;
+    left: 52px;
+    transform: translate(-50%, -50%);
+
+    &__label {
+        padding-bottom: $spacing-xl;
+    }
+
+
+    //Switch/ toggle tutorial used: https://codepen.io/Bradley_Lancaster/pen/jPzEbz
+
+    $transition: .3s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    $width: 4em;
+    $success:#4cd964;
+
+
+    &__input {
+        display: none;
+
+        &:checked + .toggle-control{
+
+          background-color: $success;
+
+            &:after{
+                left: $spacing-xl;
+            }
+        }
+    }
+
+    &__toggle {
+
+        .toggle-control{
+            transition: $transition;
+             width: $width;
+             height: $spacing-xl;
+             display: block;
+            border-radius: $spacing-xl;
+            background-color: $primary-light;
+            position: relative;
+
+
+            &:after{
+              transition: $transition;
+              content: "";
+              width: 30px;
+              height: 30px;
+              display: block;
+              background-color: $dark-grey;
+              border-radius: 50%;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 810px) {
+    .switch {
+        position: relative;
+        left: 155px;
+        margin: 0;
+    }
+}
+

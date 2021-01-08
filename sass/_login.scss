@@ -1,0 +1,30 @@
+.login {
+    margin-bottom: $spacing-form;
+    margin-top: $spacing-l;
+
+    &__error {
+        background-color: $secondary-red;
+        color: #fff;
+        text-align: center;
+        padding: $spacing-s;
+        display: none;
+    }
+
+    &__submit {
+        border: none;
+        width: 100%;
+        font-weight: $font-semibold;
+
+    }
+
+}
+
+@media only screen and (min-width: 680px) {
+    .login {
+        margin-top: $spacing-l;
+
+        .form-control {
+            display: inline;
+        }
+    }
+}

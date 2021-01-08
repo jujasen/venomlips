@@ -1,0 +1,40 @@
+.add {
+
+    margin: $spacing-xl 0 $spacing-form 0;
+
+
+    &__space {
+        margin-top: $spacing-l;
+    }
+
+    &__btn {
+        margin-bottom: $spacing-l;
+        font-weight: $font-medium;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 810px) {
+    .add {
+        margin-top: 50px;
+
+        &__space {
+            margin: 0;
+        }
+
+        &__fields {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        .form-control {
+            display: inline;
+        }
+    }
+
+    
+}

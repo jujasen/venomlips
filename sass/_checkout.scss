@@ -1,0 +1,14 @@
+.checkout {
+    margin: $spacing-xl 0;
+
+    &__text {
+        font-weight: $font-semibold;
+    }
+}
+
+.cart {
+    &__loader {
+        display: block;
+        margin: 0 auto;
+    }
+}

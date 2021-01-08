@@ -1,0 +1,48 @@
+.edit {
+
+    margin: $spacing-xl 0 $spacing-l 0;
+
+
+    &__space {
+        margin-top: $spacing-l;
+    }
+
+    &__btn {
+        margin-bottom: $spacing-l;
+    }
+
+    &__btn {
+        font-weight: $font-medium;
+    }
+
+    &__btn-delete {
+        color: #fff;
+        
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 810px) {
+    .edit {
+        margin-top: 50px;
+        
+        &__selected {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+
+        .form-control {
+            display: inline;
+        }
+
+        &__space {
+            margin: 0;
+        }
+    }
+
+    
+}

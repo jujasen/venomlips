@@ -1,0 +1,50 @@
+.ingredients {
+
+    &__title {
+        margin: 0;
+    }
+
+    &__dropdown {
+        display: flex;
+        justify-content: space-between;
+        margin: $spacing-l 0;
+        padding-top: $spacing-l;
+        cursor: pointer;
+    }
+
+    &__icon {
+        font-size: $fontsize-primary;
+        color: $primary-red;
+        line-height: 1.5;
+    }
+
+    &__text {
+        margin-bottom: $spacing-xl;
+
+        &--hidden {
+            display: none;
+        }
+
+        &--show {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 735px) {
+
+    .ingredients {
+
+        &__dropdown {
+            justify-content: flex-start;
+        }
+
+        &__icon {
+            line-height: 1.2;
+            margin-left: $spacing-l;
+        }
+    
+    }
+
+    
+}

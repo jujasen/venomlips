@@ -1,0 +1,59 @@
+.cartitem {
+
+    margin: $spacing-xl 0;
+
+    &__details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: $spacing-s;
+    }
+    
+    &__title {
+        font-family: $secondary-font;
+        color: $dark-grey;
+        font-size: $fontsize-primary;
+        margin: 0;
+        text-align: left;
+    }
+
+    &__price {
+        margin: 0;
+    }
+
+    &__img {
+        width: 80px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__amount {
+        width: 100%;
+        margin-right: $spacing-s;
+
+    }
+
+    &__amount-minus {
+        cursor: pointer;
+    }
+
+    &__amount-plus {
+        cursor: pointer;
+    }
+
+    &__amount-number {
+        margin: 0;
+        font-size: $fontsize-primary-s;
+    }
+
+    &__remove {
+        width: 100%;
+        cursor: pointer;
+    }
+
+
+}

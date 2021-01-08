@@ -1,0 +1,32 @@
+.horizontal {
+    // tutorial used for horizontal line with text inside: https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle/5214204
+    
+    &__text {
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid $dark-grey; 
+        line-height: 0.1em;
+        margin: 4rem 0; 
+    }
+
+    &__line {
+        background:#fff; 
+        padding:0 10px; 
+
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    .horizontal {
+        
+        &__text {
+            display: none;
+        }
+
+        &__line {
+            display: none;
+        }
+    }
+
+    
+}

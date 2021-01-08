@@ -1,0 +1,37 @@
+.form {
+
+    &__input {
+        border: 3px solid $primary-light;
+        border-radius: 0;
+        height: auto;
+        padding: $spacing-s;
+    }
+
+    &__validation {
+        color: $primary-red;
+        display: none;
+    }
+
+    &__error {
+        background-color: $primary-red;
+        color: $secondary-light;
+        padding: $spacing-s;
+        display: none;
+
+    }
+
+    &__success {
+        background-color: #c4ffce;
+        color: $dark-grey;
+        padding: $spacing-s;
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 735px) {
+    .form {
+        margin-top: 50px;
+
+    }
+}
+
